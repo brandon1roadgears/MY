@@ -19,10 +19,10 @@ target4:
 	mkdir -p build/test
 
 
-bin/turing-test: build/test/Turing-TEST.o build/test/test-printstring.o
+bin/turing-test: build/test/test.o build/test/test-printstring.o
 	g++ $(CFLAGS)  $^ -o $@
 
-build/test/Turing-TEST.o: test/Turing-TEST.cpp test/Turing-test-head.h
+build/test/test.o: test/test.cpp test/Turing-test-head.h
 	$(TOBJT)
 
 build/test/test-printstring.o: test/test-printstring.cpp test/Turing-test-head.h
