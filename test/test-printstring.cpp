@@ -10,7 +10,7 @@ SCENARIO( "Check function with string return", "[string]" ) {
 		WHEN("Stings value is..."){
 			str_test = "101010101010101";
 			THEN("Function should return..."){
-				REQUIRE(print_string(str_test) == "101010101010101";
+				REQUIRE(print_string(str_test) == "101010101010101");
 			}
 		}
 	}
