@@ -1,17 +1,13 @@
 #include "Turing-test-head.h"
-string print_string(string row)
+int print_string(int row)
 {
   return row;
 }
 
-SCENARIO( "Check function with string return", "[string]" ) {
-	GIVEN( "String with some value" ) {
-		std::string str_test;
-		WHEN("Stings value is..."){
-			str_test = "101010101010101";
-			THEN("Function should return..."){
-				REQUIRE(print_string(str_test) == "101010101010101");
-			}
-		}
-	}
+TEST_CASE("Aga" ,"[AGA]"){
+  REQUIRE(print_string(1) == 1);
+  REQUIRE(print_string(2) == 2);
+  REQUIRE(print_string(3) == 3);
+  REQUIRE(print_string(4) == 4);
+  REQUIRE(print_string(5) == 5);
 }
