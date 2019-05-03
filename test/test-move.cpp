@@ -33,4 +33,5 @@ TEST_CASE("test MOVE", "[TEST]"){
   REQUIRE(point(19,"r") == 20);
   REQUIRE(point(221,"r") == 222);
   REQUIRE(point(95,"l") == 94);
+  cout << endl <<"TEST PRINTSTRING.cpp is done" << endl;
 }

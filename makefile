@@ -20,7 +20,7 @@ target4:
 	mkdir -p build/test
 
 
-bin/turing-test: build/test/test.o build/test/test-printstring.o
+bin/turing-test: build/test/test.o build/test/test-printstring.o build/test/test-move.o build/test/test-check_error.o
 	$(COMPILER) $(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/Turing-test-head.h
@@ -29,8 +29,13 @@ build/test/test.o: test/test.cpp test/Turing-test-head.h
 build/test/test-printstring.o: test/test-printstring.cpp test/Turing-test-head.h
 	$(TOBJT)
 
+build/test/test-move.o: test/test-move.cpp test/Turing-test-head.h
+	$(TOBJT)
+
+build/test/test-check_error.o: test/test-check_error.cpp test/Turing-test-head.h
+	$(TOBJT)
+
 clean:
 	rm build/*.o
-	rm bin/*.exe
 	rm -R -f build
 	rm -R -f bin

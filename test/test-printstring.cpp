@@ -15,5 +15,5 @@ TEST_CASE("Aga" ,"[AGA]"){
   REQUIRE(print_string("(adsadadad)(asdadasdasda)") == "(adsadadad)(asdadasdasda)" );
   REQUIRE(print_string("hello world !") == "hello world !");
   REQUIRE(print_string("|abababbababa|") == "|abababbababa|");
-  cout << endl <<"TEST PRINTSTRING.cpp is done";
+  cout << endl <<"TEST PRINTSTRING.cpp is done" << endl;
 }
