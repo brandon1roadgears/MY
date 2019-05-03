@@ -11,7 +11,7 @@ TEST_CASE("Aga" ,"[AGA]"){
   REQUIRE(print_string("165+354") == "165+354");
   REQUIRE(print_string("") == "12e(3) 3(2)q1" );
   REQUIRE(print_string("(123123)-(2)+(32323)=") == "(123123)-(2)+(32323)=");
-  REQUIRE(print_string("!@#$%^*") == "!@#$%^*";
+  REQUIRE(print_string("!@#$%^*") == "!@#$%^*");
   REQUIRE(print_string("(adsadadad)(asdadasdasda)") == "(adsadadad)(asdadasdasda)" );
   REQUIRE(print_string("hello world !") == "hello world !");
   REQUIRE(print_string("|abababbababa|") == "|abababbababa|");
