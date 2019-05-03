@@ -1,4 +1,5 @@
-bool check_error(string rules, string exp_symbol, string new_symb string, string move, string next state)
+#include "Turing-test-head.h"
+bool check_error(string rules, string exp_symbol, string new_symb, string move, string next state)
 {
 	if(state.length() > 10)
     return 0;
@@ -28,5 +29,5 @@ TEST_CASE("Check error test:", "[Checkerrortest]"){
   REQUIRE(check_error("00","qq","w","l","24") == 0);
   REQUIRE(check_error("25","z","s","rr","12") == 0);
   REQUIRE(check_error("q","w","e","r","nexststate12") == 0);
-
+  cout << endl <<"TEST check_error is done" << endl;
 }
