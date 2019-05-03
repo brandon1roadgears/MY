@@ -1,5 +1,5 @@
 #include "Turing-test-head.h"
-bool check_error(string rules, string exp_symbol, string new_symb, string move, string next_state)
+bool check_error(string state, string exp_symbol, string new_symb, string move, string next_state)
 {
 	if(state.length() > 10)
     return 0;
