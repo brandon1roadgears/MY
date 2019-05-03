@@ -10,4 +10,5 @@ TEST_CASE("Aga" ,"[AGA]"){
   REQUIRE(print_string(3) == 3);
   REQUIRE(print_string(4) == 4);
   REQUIRE(print_string(5) == 5);
+  cout << "test is done";
 }
