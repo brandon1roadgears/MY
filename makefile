@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror
 OBJ = g++ $(CFLAGS) -c $< -o $@
-TOBJT = g++ $(CFLAGS) -I check/catch2 -c $< -o $@
+TOBJT = g++ $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
