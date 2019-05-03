@@ -1,14 +1,14 @@
 #include "Turing-test-head.h"
-int print_string(int row)
+string print_string(string row)
 {
   return row;
 }
 
 TEST_CASE("Aga" ,"[AGA]"){
-  REQUIRE(print_string(1) == 1);
-  REQUIRE(print_string(2) == 2);
-  REQUIRE(print_string(3) == 3);
-  REQUIRE(print_string(4) == 4);
-  REQUIRE(print_string(5) == 5);
+  REQUIRE(print_string("10101001010101") == "10101001010101");
+  REQUIRE(print_string("fusdfbsdgbsdgvisdgbvd") == "fusdfbsdgbsdgvisdgbvd");
+  REQUIRE(print_string("           ") == "           ");
+  REQUIRE(print_string("165+354") == "165+354");
+  REQUIRE(print_string("12e(3) 3(2)q1") == "12e(3) 3(2)q1");
   cout << "test is done";
 }
