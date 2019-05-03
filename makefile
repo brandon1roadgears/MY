@@ -1,6 +1,7 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ -std=c++11 $(CFLAGS) -c $< -o $@
-TOBJT = g++ -std=c++11 $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
+COMPILER = g++ -std=c++11
+OBJ = $(COMPILER) $(CFLAGS) -c $< -o $@
+TOBJT = $(COMPILER) $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
@@ -20,7 +21,7 @@ target4:
 
 
 bin/turing-test: build/test/test.o build/test/test-printstring.o
-	g++ $(CFLAGS)  $^ -o $@
+	$(COMPILER) $(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/Turing-test-head.h
 	$(TOBJT)
