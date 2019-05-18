@@ -1,7 +1,7 @@
 CFLAGS = -Wall -Werror
 COMPILER = g++ -std=c++11
 OBJ = $(COMPILER) $(CFLAGS) -c $< -o $@
-TOBJT = $(COMPILER) $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
+TOBJT = $(COMPILER) $(CFLAGS) -I for_test_special/catch2 -c $< -o $@
 
 .PHONY: clean
 
