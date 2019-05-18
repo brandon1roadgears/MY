@@ -37,7 +37,12 @@ int check_error(vector <action> &rules)
 	return 1;
 }
 TEST_CASE("Check error test:", "[Checkerrortest]"){
-	vector <action> rules = {"00","1","0","r","01"};
+	std::vector <action> rules(1);
+	rules[0].state = "00";
+	rules[0].exp_symbol = "1";
+	rules[0].new_symb = "0";
+	rules[0].move = "r";
+	rules[0].next_state = "01";
 	REQUIRE(check_error(rules) == 1);
   cout << endl <<"TEST check_error is done" << endl;
 }

@@ -36,6 +36,7 @@ build/test/test-check_error.o: test/test-check_error.cpp test/Turing-test-head.h
 	$(TOBJT)
 
 clean:
-	rm build/*.o
-	rm -R -f build
-	rm -R -f bin
+	rm -R build/test/*.o
+	rm -R bin/turing-test
+	rm -R build
+	rm -R bin
